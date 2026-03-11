@@ -8,7 +8,7 @@ Three draft texts illuminate complementary parts of the problem. The **AgentDNS*
 
 Taken together, these drafts imply a useful position: a multi-agent Internet should be built as a **layered ecosystem**. Discovery, identity, authorization, execution, and evaluation are all necessary, but they should not be collapsed into one root service without stronger security, privacy, and governance mechanisms. In particular, the analyses consistently show that centralized discovery-plus-auth-plus-billing architectures create concentrated trust and operational risk, while agent autonomy creates a need for auditable, least-privilege, dynamically revocable authorization.
 
-This review takes the position that GPT-based agents can participate in a multi-agent Internet if four conditions are met:
+This review takes the position that agents can participate in a multi-agent Internet if four conditions are met:
 
 1. **Discovery is separated from trust-sensitive enforcement functions where possible.**
 2. **Authentication and authorization rely on existing workload identity and OAuth-based mechanisms rather than proprietary agent-only schemes.**
@@ -94,7 +94,7 @@ The AI agent authentication analysis is more mature in one important respect: it
 - token exchange and transaction-scoped tokens for least-privilege propagation,
 - and Shared Signals / CAEP / RISC for dynamic remediation.
 
-This framework aligns well with the needs of GPT-based multi-agent systems, because it separates the question “who is this agent workload?” from the question “what is it allowed to do right now, and on whose behalf?” The analysis also correctly identifies static API keys as an anti-pattern and stresses the importance of short-lived credentials, proof of possession, and durable auditing.
+This framework aligns well with the needs of multi-agent systems, because it separates the question “who is this agent workload?” from the question “what is it allowed to do right now, and on whose behalf?” The analysis also correctly identifies static API keys as an anti-pattern and stresses the importance of short-lived credentials, proof of possession, and durable auditing.
 
 At the same time, the analysis notes unresolved issues that matter for agentic systems specifically:
 
@@ -124,7 +124,7 @@ Even though this benchmark is specific to network configuration, its broader imp
 - correctness of actions,
 - and whether the resulting behavior satisfies the intended goal.
 
-This matters for GPT-based systems because much of their real-world value comes from orchestration rather than text generation alone.
+This matters for agent systems because much of their real-world value comes from orchestration rather than text generation alone.
 
 The benchmark draft also points to limitations that carry over to the larger ecosystem:
 
@@ -243,7 +243,7 @@ Hierarchical agent graphs reinforce the core argument of this review. The more l
 
 ## Position
 
-A viable multi-agent internet using GPT should be built as a **federated, layered trust and discovery ecosystem** grounded in existing identity and authorization standards, with narrowly scoped discovery and metadata services and with realistic benchmark-driven evaluation. It should **not** be built, at least on the evidence in the drafts, as a single centralized root that simultaneously controls naming, discovery, proxying, authentication, and billing.
+A viable multi-agent internet should be built as a **federated, layered trust and discovery ecosystem** grounded in existing identity and authorization standards, with narrowly scoped discovery and metadata services and with realistic benchmark-driven evaluation. It should **not** be built, at least on the evidence in the drafts, as a single centralized root that simultaneously controls naming, discovery, proxying, authentication, and billing.
 
 #### 1. The need for discovery is real, but centralization is overextended
 
@@ -273,7 +273,7 @@ The authentication draft provides the strongest basis for deployment. Treating a
 - token exchange rather than token forwarding,
 - and revocation/remediation signals.
 
-This approach is especially important for GPT-based agents because model reasoning is not trustworthy enough to substitute for protocol-level authorization. A GPT agent may plan or request an action, but the surrounding infrastructure must decide whether the action is permitted.
+This approach is especially important for agents because model reasoning is not trustworthy enough to substitute for protocol-level authorization. An agent may plan or request an action, but the surrounding infrastructure must decide whether the action is permitted.
 
 Thus the multi-agent internet should rely on **cryptographic workload identity plus delegated authorization**, not on discovery-layer tokens that are vaguely valid “across services” without precise scoping.
 
@@ -301,7 +301,7 @@ The benchmark’s evaluation approach is not perfect, but it reflects an importa
 - execution success,
 - and auditability.
 
-A GPT-based agent ecosystem without this discipline risks substituting persuasive demos for dependable interoperability.
+An agent ecosystem without this discipline risks substituting persuasive demos for dependable interoperability.
 
 ---
 
@@ -372,7 +372,7 @@ The authentication analysis strongly supports using existing standards rather th
 - token exchange for downstream access,
 - and dynamic remediation signals.
 
-This is the strongest grounded path in the provided texts for securing GPT-based agents across domains.
+This is the strongest grounded path in the provided texts for securing agents across domains.
 
 ### 3. Treat service metadata as a trust object, not just a directory entry
 
@@ -434,7 +434,7 @@ Without this, “interoperability” remains largely aspirational.
 
 Both the auth and benchmark analyses support human-in-the-loop controls for high-impact actions. However, the auth analysis makes a crucial point: local UI confirmation is not enough unless it becomes a verifiable authorization artifact.
 
-In the multi-agent internet, GPT agents should not treat user confirmation as merely conversational state. Sensitive actions should be linked to explicit authorization grants that downstream systems can validate.
+In the multi-agent internet, agents should not treat user confirmation as merely conversational state. Sensitive actions should be linked to explicit authorization grants that downstream systems can validate.
 
 ### 8. Design explicitly for hierarchical delegation and configuration inheritance
 
@@ -458,7 +458,7 @@ The added perspective of hierarchical agent graphs strengthens that conclusion. 
 
 The AgentDNS draft correctly identifies the need for naming, discovery, and protocol-aware service resolution, but currently overextends into centralized authentication, billing, and proxying without adequate trust, privacy, or governance detail. The AI agent authentication and authorization draft provides a stronger trust foundation by reusing workload identity, OAuth-based delegation, proof-of-possession, and dynamic remediation. The benchmark draft adds an essential constraint: these architectures must be evaluated in interactive, tool-mediated environments with functional outcome measures.
 
-Accordingly, this review's position is that GPT-based agents can participate effectively in a multi-agent internet only if the ecosystem is built on:
+Accordingly, this review's position is that agents can participate effectively in a multi-agent internet only if the ecosystem is built on:
 
 - **narrowly scoped discovery and metadata mechanisms,**
 - **existing workload identity and authorization standards,**
