@@ -1,4 +1,4 @@
-# Agent Internet RFCs Review: Toward a Multi-Agent Internet Using GPT
+# Agent Internet RFCs Review: Toward a Multi-Agent Internet
 
 ## Executive Summary
 
