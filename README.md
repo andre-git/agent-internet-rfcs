@@ -503,4 +503,4 @@ What emerges is not a single protocol or platform, but an architectural discipli
 - HTTP Message Signatures
 
 ## Feedback
-The .agent Community (https://agentcommunity.org/about, 3,000+ members, 700+ companies) is going through ICANN's Community Priority Evaluation in the 2026 round to get `.agent` under community governance instead of corporate control. AID works on any domain today, but a community-governed TLD for agents is worth knowing about if you care about who controls the naming layer. Spec is at v1.2 https://aid.agentcommunity.org/docs/specification
+The .agent Community (`https://agentcommunity.org/about`, 3,000+ members, 700+ companies) is going through ICANN's Community Priority Evaluation in the 2026 round to get `.agent` under community governance instead of corporate control. AID works on any domain today, but a community-governed TLD for agents is worth knowing about if you care about who controls the naming layer. Spec is at v1.2 `https://aid.agentcommunity.org/docs/specification`
